@@ -1,0 +1,15 @@
+<svg width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="192" height="192" rx="96" fill="#FAFAFA"/>
+  
+  <!-- Tomato body -->
+  <circle cx="96" cy="116" r="76" fill="#FF6347" />
+  
+  <!-- Tomato stem -->
+  <path d="M96 40C96 40 56 40 56 20C56 0 96 10 96 10C96 10 136 0 136 20C136 40 96 40 96 40Z" fill="#228B22" />
+  
+  <!-- Tomato leaf left -->
+  <path d="M56 30C56 30 36 30 26 10C16 -10 56 10 56 30Z" fill="#228B22" />
+  
+  <!-- Tomato leaf right -->
+  <path d="M136 30C136 30 156 30 166 10C176 -10 136 10 136 30Z" fill="#228B22" />
+</svg> 

@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.circle-progress {
+  transition: stroke-dashoffset 0.3s;
+  transform-origin: center;
+  stroke-linecap: round;
+}
+
+/* Mobile device styling */
+@media (max-width: 640px) {
+  .max-w-md {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+/* Shadow for the container */
+.shadow-lg {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Tomato color */
+.text-tomato {
+  color: #FF6347;
+}
+
+.bg-tomato {
+  background-color: #FF6347;
+}
+
+.hover\:bg-tomato-dark:hover {
+  background-color: #E55A3D;
+}
+
+/* Ensure consistent sizing across tabs */
+.tab-content {
+  min-height: 430px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ensure buttons have consistent styling */
+.btn {
+  font-weight: 500;
+  padding: 0.75rem 3rem;
+  border-radius: 9999px;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-duration: 200ms;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-primary {
+  background-color: #FF6347;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #E55A3D;
+}
+
+.btn-secondary {
+  background-color: #e5e7eb;
+  color: #4b5563;
+}
+
+.btn-secondary:hover {
+  background-color: #d1d5db;
+}
+
+/* Points button styles */
+.points-button {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.points-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.points-button::after {
+  content: '👆';
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.points-button:hover::after {
+  opacity: 1;
+} 
