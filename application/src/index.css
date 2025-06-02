@@ -82,28 +82,26 @@ body {
   background-color: #d1d5db;
 }
 
-/* Points button styles */
-.points-button {
-  cursor: pointer;
-  transition: all 0.2s ease;
-  position: relative;
+/* Leaderboard styles */
+.leaderboard-overlay {
+  animation: fadeIn 0.2s ease-in-out;
 }
 
-.points-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+.leaderboard-container {
+  animation: slideIn 0.3s ease-out;
 }
 
-.points-button::after {
-  content: '👆';
-  position: absolute;
-  top: -5px;
-  right: -5px;
-  font-size: 12px;
-  opacity: 0;
-  transition: opacity 0.2s ease;
+.leaderboard-row-current {
+  background-color: rgba(255, 99, 71, 0.1);
+  border-left: 3px solid #FF6347;
 }
 
-.points-button:hover::after {
-  opacity: 1;
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 } 
