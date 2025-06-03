@@ -2,6 +2,7 @@
   "name": "tomatotime",
   "version": "1.0.0",
   "description": "A minimalist Pomodoro timer app",
+  "homepage": "https://wwzjustin.github.io/pomodoro_cursor",
   "main": "src/index.js",
   "dependencies": {
     "react": "^19.1.0",
