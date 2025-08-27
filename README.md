@@ -16,25 +16,6 @@ A minimalist Pomodoro timer app designed to help users manage their time effecti
 - **React**: JavaScript library for building the user interface
 - **TailwindCSS**: Utility-first CSS framework for styling
 
-## Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/wwzjustin/pomodoro_cursor.git
-cd pomodoro_cursor/Pomodoro/application
-```
-
-2. Install dependencies:
-```bash
-npm install
-```
-
-3. Start the development server:
-```bash
-npm start
-```
-
-4. Open your browser and navigate to `http://localhost:3000`
 
 ## Screenshot
 
